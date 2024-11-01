@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Colombia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@400;700&display=swap');
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+        .icons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .icons i {
+            font-size: 24px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .menu-icon {
+            color: #ffcc00;
+        }
+        .home-icon {
+            color: #0033cc;
+        }
+        .search-icon {
+            color: #ff0000;
+        }
+        h1 {
+            font-size: 36px;
+            font-family: 'Pacifico', cursive;
+        }
+        .letter-yellow {
+            color: #ffcc00;
+        }
+        .letter-blue {
+            color: #0033cc;
+        }
+        .letter-red {
+            color: #ff0000;
+        }
+        .intro-text {
+            font-family: 'Roboto Slab', serif;
+            font-size: 18px;
+            color: #0033cc;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .baile {
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .section-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .tradiciones {
+            color: #ffcc00;
+        }
+        .sabores {
+            color: #0033cc;
+        }
+        .folclor {
+            color: #ff0000;
+        }
+        .baile img {
+            width: 100%;
+            height: 200px; /* Define una altura fija para que todas las imágenes sean del mismo tamaño */
+            object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin distorsión */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .instagram-icon {
+            color: #ffcc00;
+        }
+        .facebook-icon {
+            color: #0033cc;
+        }
+        .twitter-icon {
+            color: #ff0000;
+        }
+        /* Estilo para el menú lateral */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            color: white;
+        }
+        .side-menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .side-menu a:hover {
+            color: #f1f1f1;
+        }
+        .side-menu .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="icons">
+            <i class="fas fa-bars menu-icon" onclick="openMenu()"></i>
+            <i class="fas fa-home home-icon" onclick="goHome()"></i>
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <h1>
+            <span class="letter-yellow">C</span><span class="letter-blue">u</span><span class="letter-yellow">l</span><span class="letter-red">t</span><span class="letter-blue">u</span><span class="letter-red">r</span><span class="letter-yellow">a</span>
+            <span class="letter-blue">C</span><span class="letter-red">o</span><span class="letter-yellow">l</span><span class="letter-blue">o</span><span class="letter-red">m</span><span class="letter-yellow">b</span><span class="letter-blue">i</span><span class="letter-red">a</span>
+        </h1>
+        <p class="intro-text">"Colombia en su máxima expresión: un recorrido por sus costumbres auténticas, sabores exquisitos y herencia cultural."</p>
+    </header>
+
+    <section>
+        <div class="baile">
+            <h2 class="section-title tradiciones">Tradiciones</h2>
+            <img src="Folclorr.jpg" alt="Tradiciones">
+        </div>
+
+        <div class="baile">
+            <h2 class="section-title sabores">Sabores</h2>
+            <img src="Saboresm.jpg" alt="Sabores">
+        </div>
+
+        <div class="baile">
+            <h2 class="section-title folclor">Folclor</h2>
+            <img src="Tradicioness.jpg" alt="Folclor">
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <i class="fab fa-instagram instagram-icon"></i>
+            <i class="fab fa-facebook facebook-icon"></i>
+            <i class="fab fa-twitter twitter-icon"></i>
+        </div>
+        <p>&copy; Términos legales y copyright.</p>
+    </footer>
+
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="tradiciones.html">Tradiciones</a>
+        <a href="sabores.html">Sabores</a> <!-- Enlace añadido para acceder a la página Sabores -->
+        <a href="folclor.html">Folclor</a> <!-- Enlace actualizado para la página Folclor -->
+        <a href="#">Contacto</a>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+        }
+        function closeMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+        }
+        function goHome() {
+            window.location.href = 'index.html'; // Asegúrate de cambiar esto si usas otra ruta para la página de inicio
+        }
+    </script>
+</body>
+</html>
